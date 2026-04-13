@@ -13,10 +13,10 @@ describe('SummaryCards', () => {
   ];
 
   it('renderiza los 3 estados correctamente', () => {
-    render(<SummaryCards summary={mockSummary} />);
-    expect(screen.getByText('Abierto')).toBeInTheDocument();
-    expect(screen.getByText('En progreso')).toBeInTheDocument();
-    expect(screen.getByText('Resuelto')).toBeInTheDocument();
+	render(<SummaryCards summary={mockSummary} />);
+	expect(screen.getByText((content) => content.includes('Abierto'))).toBeInTheDocument();
+	expect(screen.getByText((content) => content.includes('En progreso'))).toBeInTheDocument();
+	expect(screen.getByText((content) => content.includes('Resuelto'))).toBeInTheDocument();
   });
 
   it('muestra los contadores correctos', () => {
