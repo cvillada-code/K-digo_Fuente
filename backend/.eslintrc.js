@@ -9,9 +9,8 @@ module.exports = {
     ecmaVersion: 'latest',
   },
   rules: {
-    'no-unused-vars': ['warn', { argsIgnorePattern: '^_' }],
-    'no-console': 'off',
-    'semi': ['error', 'always'],
-    'quotes': ['error', 'single'],
+	'no-unused-vars': ['warn', { argsIgnorePattern: '^_' }],
+	'no-console': 'off',
+	'semi': ['error', 'always'],
   },
 };
